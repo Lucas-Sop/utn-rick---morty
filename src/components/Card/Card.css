@@ -1,0 +1,56 @@
+/*-----------------------Tarjetas-----------------------*/
+
+.cards{
+    background-color: var(--dark-green);
+    width: auto;
+    
+}
+
+.cards img {
+    width: 100%;
+}
+
+/*-----------------------Nombre-----------------------*/
+
+.titleCard{
+    color: var(--white);        /*Color letra*/
+    text-align: center;         /*alineado */
+    overflow:hidden;            /*desdoblamiento*/
+    text-overflow: ellipsis;    /*desdoblamiento*/
+    max-width: 300px;           /*Para que el text siga en el proximo renglon*/
+}
+
+/*-----------------------BOTONES-----------------------*/
+
+.btn-more{background-color:  var(--light-green);} /*Fondo Now More*/
+
+.btnClose{                                      
+    padding: 12px 20px;                     /*Hacerlo mas cuadradito*/
+    background-color: var(--light-green);  /*Fondo cerrar Now More*/
+    cursor: pointer;                        /*cambiar icono cursor*/
+}
+
+.btn-more:hover {background-color:  var(--more-light-green);} /*cambia color al pasar mouse*/
+.btnClose:hover {background-color:  var(--more-light-green);} /*cambia color al pasar mouse*/
+
+/*---------Informacion de los personajes-----------------*/
+
+.list-group-item{
+    background-color: var(--dark-green);    /*Color Fondo informacion*/
+    color:white;                         /*Color Letra informacion*/
+}
+
+.list-group-item {                  /*Propiedades del texto de los subtiulos*/
+    display: flex;
+    flex-direction: column;            
+    font-size: 20px;                           
+    font-weight: 500;                   
+}
+
+.list-group-item span{              /*Propiedades del texto de los datos*/
+    text-decoration:solid;
+    font-weight: bold;              
+    font-size: 30px;
+    color:white
+}
+

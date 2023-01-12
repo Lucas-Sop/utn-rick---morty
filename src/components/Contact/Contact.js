@@ -1,17 +1,19 @@
 import { Fragment } from 'react';
 
 import Navegation from '../Navegation/Navegation'
-
+import './Contact.css'
 export default function Contact(){
     /* Formulario no controlado*/
     
     return(
         <Fragment>
             <Navegation/>
-            <main>
-                <h2>Contact</h2>
-                <h3>Leave us your information so we can contact you</h3>
-                <form className="row g-3 mx-4" action=''>
+            <main className='  container-fluid contactMain '>
+                <section className='contactMain-div d-flex flex-column justify-content-center align-self-center '>
+                    <h2 className='colourBlue'>Contact</h2>
+                    <h3 className='colourBlue'>Leave us your information so we can contact you</h3>
+                </section>
+                <form className="align-self-center row mx-4" action=''>
                     <div className="col-md-6">
                         <label htmlFor="nombre" className="form-label">Nombre</label>
                         <input type="text" className="form-control" id="nombre" />

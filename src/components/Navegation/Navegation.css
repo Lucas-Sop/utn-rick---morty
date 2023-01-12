@@ -1,6 +1,26 @@
-ul{
-    list-style-type: none;
+
+/*------------------NAV--------------------------*/
+
+
+.navbarHeader{background-color: var(--dark-green);}  /*color fondo*/
+
+.navbarHeader li:hover {            /*hover sobre los botones*/
+    color: #344D67;
+    background-color: var(--light-green);
+    border-radius: 4px;
+    cursor: pointer;
 }
-header{
-    padding: 20px;
+
+.navTitle, ul li{                   /*color y formota de  botones*/
+    color: var(--light-green);
+    text-decoration: none;
+} 
+
+.navTitle:hover {                   /*hover sobre el titulo*/
+    color:rgb(34, 109, 66);
+    cursor: pointer;
 }
+
+
+
+

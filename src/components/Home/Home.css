@@ -1,11 +1,45 @@
-/* pondriamos las propiedades CSS que necesitamos*/
-
-@media ( max-width:768px){
-    ul{
-        flex-direction: column ;
-    }
+ *{
+    margin: 0;
+    padding: 0;
 }
 
-li{
-    color: blue;
+.container-Home{height: 100vh;}
+
+.container-Main{
+    background-color: var(--white);
+    height: 510px;
+}
+
+h1, nav {
+    margin-bottom: 0.5rem;
+    width: 600px;
+    padding: 40px;
+    color: var(--dark-green);
+}
+
+.boton{
+    color:var(--light-green);
+    background-color: var(--dark-green)!important ;
+    font-size: 1.2rem;
+    margin: 0px 10px ;
+    border-radius: 8px;
+    transition: background-color 200ms, color 200ms;
+}
+
+.boton:hover{
+    background-color:var(--light-green)!important;
+    color:var(--dark-green)!important;
+    width: fit-content;
+}
+
+@media (max-width: 990px) {
+
+    .container-Main{height: 310px;}
+
+    h1, nav {
+        margin-bottom: 0.5rem;
+        width: 500px;
+        padding: 20px;
+        text-align:center;
+    }
 }

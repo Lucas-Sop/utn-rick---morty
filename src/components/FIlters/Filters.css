@@ -1,0 +1,22 @@
+/*--------------CONTENEDOR INDIVIDUALES------------------*/
+
+.switch{
+    width: 180px;
+    background-color: var(--dark-green);
+}
+
+/*--------------------CHECKBOX---------------------*/
+
+.switch input{
+    margin-left: 10px!important;
+    margin-right: 10px;
+    background-color: #223142;        /*filtro desactivado*/
+}
+.switch input:checked{
+background-color: var(--light-green);   /*filtro activado*/
+}
+/*--------------------TEXTO---------------------*/
+
+.switch label{
+    color: var(--light-green);   
+}

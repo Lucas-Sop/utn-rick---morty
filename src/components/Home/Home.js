@@ -1,25 +1,21 @@
 import "./Home.css";
-import ListItemHome from "../ListItemHome/ListItemHome";
+import { Link } from "react-router-dom";
 
-
-/* Este componente corresponde a la pagina inicial (la del cuadrado blanco con los botones.
-    La navegacion de las hojas secundarias las hacemos en el componente Navegation*/
 
 export default function Home() {
 
     return(
-        
-        <header className="bg-primary">
-            <h1 >Proyect - Rick & Morty</h1>
-            <nav className="navbar">
-                <ul className="d-flex justify-content-between">
-
-                    <ListItemHome dato="Characters" infoPath="/characters"/>
-                    <ListItemHome dato="Contact" infoPath="/contact"/>
-                    
-                </ul>
-            </nav>
-        </header>
+        <section class=" container-Home d-flex align-items-center justify-content-center">
+            <main className="container-Main d-flex flex-column justify-content-center">
+                <h1 className="row align-items-center justify-content-center">Proyect - Rick & Morty</h1>
+                <nav className="row navbar align-items-center">
+                    <ul className="nav nav-pills justify-content-center">
+                        <Link to='/characters'><button class="p-3 btn boton">Characters</button></Link>
+                        <Link to='/contact'><button class="p-3 btn boton">Contact</button></Link>
+                    </ul>
+                </nav>
+            </main>
+        </section>
     )
 }
 

@@ -1,3 +1,14 @@
-h2{
-    color: white;
-}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+    
+    --light-green: #6ECCAF;
+    --more-light-green: #4a917a;
+    --dark-green: #344D67;
+    --white: whitesmoke;
+    --translucid-white: #ffffffe6;
+    --form-background: #5c7592e6;
+    --form-letter-color: #223142;
+    --card-background: #223142;
+  }

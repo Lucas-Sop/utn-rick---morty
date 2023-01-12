@@ -1,15 +1,9 @@
 import Card from "../Card/Card";
-import './SectionCards.css'
-
-
-
 
 export default function SectionCards({datos}) {
-
-   
+    
     return(
-        <section className="section-cards">
-
+        <section className="d-flex flex-wrap justify-content-center section-cards">
             {datos.map((dato)=>{ 
                 return <Card key={dato.id} info={dato}/>
             })} 
@@ -17,4 +11,3 @@ export default function SectionCards({datos}) {
         </section>
     )
 }
-/* fetch()  */
