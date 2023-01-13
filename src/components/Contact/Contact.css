@@ -1,25 +1,53 @@
 /*------------Contenedor principal------------*/
+
 .contactMain{
     height: 100vh;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: -30px;
 }
-/*------------Contenedor Texto------------*/
-.contactMain-div {
-    width: 80vh;
-    background-color: #5c7592e6;}
 
-.colorBLue {
-    color:#223142!important
+form,.contactText{
+    border-color: var(--form-letter-color);
+    border-width: 5px;
+    border-style: solid;    
 }
+
+/*------------Contenedor Texto------------*/
+
+.contactText {
+    background-color:#5c7592e6; 
+    text-align: center; 
+}
+
+.contactText .colorText{
+    color: var(--form-letter-color);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.contactMain .container section{padding: 30px;}
 
 /*------------Contenedor form------------*/
 
-main form{
-    background-color: #5c7592e6;
-    margin:0px 0px;
-    padding: 105px;
-    width: 80vh;
+form{
+    background-color: var(--form-background);   
+    border-top: none;
+    row-gap:  10px;
+}
+
+form .btn{
+    color: whitesmoke;
+    background-color: var(--light-green)
+
+}
+
+/* form .btn:hover{
+    color: whitesmoke;
+    background-color: var(--more-dark-green)
+} */
+
+form .btn:hover {
+    color: whitesmoke;
+    background-color: var(--dark-green);
+    border-radius: 4px;
+    cursor: pointer;
 }

@@ -39,7 +39,7 @@ export default function Characters() {
         return info 
     }
 
-    //saco la funcion por fuera para que lo pueda utilizar en mi funcion del evento
+   
     const mostrarInfo =async ()=>{
         let dato= await traerInfo()
         let infoPersonajes= dato.results
@@ -47,10 +47,8 @@ export default function Characters() {
         setDatos(infoPersonajes)
         setInfoCompleta(infoPersonajes)
     }
-    //Se ejecuta cuado se renderiza la pagina
-    useEffect(()=>{
-        mostrarInfo() 
-    },[])
+   
+    useEffect(()=>{mostrarInfo()} , [])
 
     return(
         <Fragment>

@@ -11,7 +11,9 @@
     cursor: pointer;
 }
 
-.navTitle, ul li{                   /*color y formota de  botones*/
+
+
+.navTitle, ul li{                   /*color y formato de  botones*/
     color: var(--light-green);
     text-decoration: none;
 } 

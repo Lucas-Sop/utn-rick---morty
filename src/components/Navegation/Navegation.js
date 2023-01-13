@@ -10,8 +10,8 @@ export default function Navegation() {
                 <div className="container-fluid">
                     <h2  className="my-0 navTitle navbar-brand">Rick & Morty </h2>
                     <ul  className="navbar-nav  nav-pills">
-                        <Link  to="/"><li className= "p-2 mx-2 nav-item" >Home</li></Link>  
-                        <Link  to="/characters"><li className="p-2 mx-2 nav-item">Characters</li></Link>    
+                        <Link  to="/"><li className= "p-2 mx-2 nav-item " >Home</li></Link>  
+                        <Link  to="/characters"><li className="p-2 mx-2 nav-item ">Characters</li></Link>    
                         <Link  to="/contact"><li className="p-2 mx-2 nav-item">Contact</li></Link>
                     </ul>
                 </div>
