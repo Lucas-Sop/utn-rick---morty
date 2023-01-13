@@ -1,10 +1,8 @@
-
 import {Link} from "react-router-dom";
 import './Navegation.css';
 export default function Navegation() {
-        
-        
-          return(
+    
+    return(
        <header className="navbarHeader d-flex justify-content-between align-items-center">
             <nav className="navbar navbar-expand-lg w-100 navbarHeader">
                 <div className="container-fluid">
@@ -18,5 +16,4 @@ export default function Navegation() {
             </nav>
        </header>
     )
-    
 }
